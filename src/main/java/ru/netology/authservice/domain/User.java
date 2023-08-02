@@ -20,10 +20,8 @@ public class User {
 	@ElementCollection(fetch = FetchType.EAGER)
 	private List<Authorities> authorities;
 	
-	// Entity теребует чтоб обязательно был дефолтный конструктор
-	public User() {
-
-	}
+	//Entity теребует чтоб обязательно был дефолтный конструктор
+	public User() {}
 
 	public User(String name, String password) {
 		this.name = name;
